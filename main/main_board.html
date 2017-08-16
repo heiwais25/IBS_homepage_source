@@ -1,0 +1,79 @@
+<style>
+    .nav-tabs{
+        font-size:1.1em;
+        border-bottom:2px solid gray;
+        font-weight:bold; 
+    }
+
+    .nav-tabs>li{
+        margin-bottom:0;
+    }
+
+    .main_center_2{
+
+        background-color:#FCFAFA;
+    }
+</style>
+
+<div class="whole_container">
+	<div class="container-fluid" style="padding:0">
+		<article>
+			<div class="row" style="background-color: white; height:250px">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<ul class="jwxe_ul" style="height:250px; width:100%; ">
+						<li class="jwxe_li jw-relative jw-fl-left" style="height:250px; width:50%;padding:10px 20px">
+							<div class="jwxe_div jw-relative main_tab_root" style="height:20px; ">
+								<ul class="nav nav-tabs main_tab_txtb2" style="display: block">
+									<li class="active" role="presentation">
+                                        <a href="#">게시판</a></li>
+								</ul>
+								<ul class="jw-relative main_center_2" style="height:200px; width:100%; margin:0px 0px 0px; ">
+									<li>
+                                        <ul class="jwxe_ul miniboard" style="width:100%; margin-top:0;height:200px">
+											<li class="jwxe_li jw-relative"></li>
+										
+										<div class="jwxe_include_item jw-relative" style="padding:15px; padding-top:10px;padding-left:0">
+                                            <jsp:include page="/_custom/skk/_common/miniboard/common_miniboard2.jsp"> 
+                                                <jsp:param name="board_no" value="1977" /> 
+                                                <jsp:param name="board_page" value="/basic/menu5/notice.jsp" />
+                                                <jsp:param name="cnt" value="7" /> 
+                                                <jsp:param name="title_length" value="25" /> 
+                                            </jsp:include>
+                                        </div>
+										
+									</ul></li>
+								</ul>
+							</div>
+						</li>
+						<li class="jwxe_li jw-relative jw-fl-left" style="height:250px; width:50%;padding:10px 20px">
+							<div class="jwxe_div jw-relative main_tab_root" style="height:20px; ">
+								<ul class="nav nav-tabs jw-relative main_tab_txtb2" style="display: block">
+									<li class="active" role="presentation">
+										<a href="#">자료실</a></li>
+								</ul>
+								<ul class="jw-relative main_center_2" style="height:200px; width:100%; margin:0px 0px 0px; ">
+									<li>
+                                        <ul class="jwxe_ul miniboard" style="width:100%; margin-top:0;height:200px">
+											<li class="jwxe_li jw-relative"></li>
+										
+										<div class="jwxe_include_item jw-relative" style="padding:15px; padding-top:10px;padding-left:0">
+                                            <jsp:include page="/_custom/skk/_common/miniboard/common_miniboard2.jsp"> 
+                                                <jsp:param name="board_no" value="1979" /> 
+                                                <jsp:param name="board_page" value="/basic/menu5/data.jsp" />
+                                                <jsp:param name="cnt" value="7" /> 
+                                                <jsp:param name="title_length" value="25" /> 
+                                            </jsp:include>
+                                        </div>
+										
+									</ul></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</article>
+	</div>
+</div>
